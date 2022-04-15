@@ -1,0 +1,41 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Event",
+  "@id": "http://quebecspectacles.com/ld/events/{{id de l'evenement}}/showings/{{ id du showing}}",
+  "eventStatus": "https://schema.org/{{ event_status.id_schema }}",
+  "additionalType": "http://quebecspectacles.com/event_types/{{ evenement.discipline.schema_type }}",
+  "image": ["{{ url des images de l'evenement }}"],
+  "name": "{{ name de l'evenement }}",
+  "description": "{{ description de l'evenement }}",
+  "url": "{{ url de la page de lévénement }}",
+  "startDate": "{{ start_date }}",
+  "endDate": {{ end_date }},
+  "performer": [
+    {
+      {{ répéter le template person-ou-organization.json pour tous les performers dont le statut est révisé }}
+    }
+  ],
+  "organizer": {{ inserer le template person-ou-organization.json pour l'organizer }}
+  "superEvent": [
+    {
+      "@id": "http://quebecspectacles.com/ld/events/{{id de l'evenement}}"
+    },
+    {
+      "@id": "{{ http://quebecspectacles.com/ld/events/{{id du super evenement}} }}"
+    },
+    {
+      {{ à répéter pour tous les super evenements }}
+    }
+  ],
+  "location": {{ insérer place.json pour la location }},
+  "offers": [
+    {
+      "@type": "Offer",
+      "availability": "https://schema.org/{{ item_availability.id_schema }}",
+      "url": "{{ URL de la page de l'evenement sur QS }}"
+    }
+  ],
+  "sameAs": [
+    "{{ url }}"
+  ]
+}

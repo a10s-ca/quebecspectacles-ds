@@ -1,0 +1,16 @@
+{
+  "@type": "{{ Person ou Organization }}",
+  "@id": "http://quebecspectacles.com/ld/people_and_organizations/{{id}}",
+  "image": "{{ image du performer }}",
+  "name": "{{ name }}",
+  "sameAs": [
+    {{ sameAs_website }},
+    {{ sameAs_facebook }},
+    {{ sameAs_instagram }},
+    {{ sameAs_twitter }},
+    {{ sameAs_youtube }},
+    {{ sameAs_wikidata }},
+    {{ sameAs_isni }}
+  ],
+  "url": "{{ url de la page de l'organisation ou personne }}"
+}

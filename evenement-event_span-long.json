@@ -1,0 +1,25 @@
+[
+  {
+    "@context": "http://schema.org",
+    "@type": "ExhibitionEvent",
+    "@id": "http://quebecspectacles.com/ld/events/{{id de l'evenement}}",
+    "additionalType": "http://quebecspectacles.com/event_types/{{ discipline.schema_type }}",
+    "image": ["{{ url des images }}"],
+    "name": "{{ name }}",
+    "description": "{{ description }}",
+    "url": "{{ url de la page de lévénement }}",
+    "startDate": "{{ start_date }}",
+    "endDate": {{ end_date }},
+    "location": {{ insérer place.json pour la location }},
+    "subEvent": [
+      {
+        {{ à répéter pour toutes les représentations }}
+        "@id": "http://quebecspectacles.com/ld/events/{{id de l'evenement}}/showings/{{ id de la représentation }}"
+      },
+      {
+        {{ à répéter pour tous les événements, seulement si on est dans une série }}
+        "@id": "http://quebecspectacles.com/ld/events/{{id de l'evenement enfant }}"
+      }
+    ]
+  }
+]

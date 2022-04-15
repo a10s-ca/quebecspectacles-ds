@@ -1,0 +1,23 @@
+{
+  "@type": "Place",
+  "@id": "http://quebecspectacles.com/ld/locations/{{ id de la location }}",
+  "url": {{ url de la page pour le lieu }},
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "{{ address_locality }}",
+    "addressRegion": "{{ address_region }}",
+    "postalCode": "{{ postal_code }}",
+    "streetAddress": "{{ street_address}}",
+    "adresseCountry": "{{ address_country }}"
+  },
+  "telephone": "{{ telephone }}",
+  "sameAs": "{{ website }}",
+  "name": "{{ name }}",
+  "geo": {
+    "type": "http://schema.org/GeoCoordinates",
+    "latitude": "{{ geo.latitude }}",
+    "longitude": "{{ geo.longitude }}"
+  },
+  "image": ["{{ images de la location }}"],
+  "description": "{{ description }}"
+}
