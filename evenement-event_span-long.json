@@ -2,7 +2,7 @@
   {
     "@context": "http://schema.org",
     "@type": "ExhibitionEvent",
-    "@id": "http://quebecspectacles.com/ld/events/{{id de l'evenement}}",
+    "@id": "{{ url de la page de l'evenement}}",
     "additionalType": "http://quebecspectacles.com/event_types/{{ discipline.schema_type }}",
     "image": ["{{ url des images }}"],
     "name": "{{ name }}",
@@ -14,11 +14,11 @@
     "subEvent": [
       {
         {{ à répéter pour toutes les représentations }}
-        "@id": "http://quebecspectacles.com/ld/events/{{id de l'evenement}}/showings/{{ id de la représentation }}"
+        "@id": "{{ url de la page de l'evenement }}#{{ id de la représentation }}"
       },
       {
         {{ à répéter pour tous les événements, seulement si on est dans une série }}
-        "@id": "http://quebecspectacles.com/ld/events/{{id de l'evenement enfant }}"
+        "@id": "{{ url de la page de l'evenement enfant }}"
       }
     ]
   }

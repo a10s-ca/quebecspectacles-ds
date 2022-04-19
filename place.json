@@ -1,7 +1,7 @@
 {
   "@type": "Place",
-  "@id": "http://quebecspectacles.com/ld/locations/{{ id de la location }}",
-  "url": {{ url de la page pour le lieu }},
+  "@id": "{{ url de la page pour le lieu }}",
+  "url": "{{ url de la page pour le lieu }}",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "{{ address_locality }}",

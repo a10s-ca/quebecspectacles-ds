@@ -1,7 +1,7 @@
 {
   "@context": "http://schema.org",
   "@type": "Event",
-  "@id": "http://quebecspectacles.com/ld/events/{{id de l'evenement}}/showings/{{ id du showing}}",
+  "@id": "{{ url de la page de l'evenement }}#{{ id du showing}}",
   "eventStatus": "https://schema.org/{{ event_status.id_schema }}",
   "additionalType": "http://quebecspectacles.com/event_types/{{ evenement.discipline.schema_type }}",
   "image": ["{{ url des images de l'evenement }}"],
@@ -18,10 +18,10 @@
   "organizer": {{ inserer le template person-ou-organization.json pour l'organizer }}
   "superEvent": [
     {
-      "@id": "http://quebecspectacles.com/ld/events/{{id de l'evenement}}"
+      "@id": "{{ url de l'evenement}}"
     },
     {
-      "@id": "{{ http://quebecspectacles.com/ld/events/{{id du super evenement}} }}"
+      "@id": "{{ url du super evenement, s'il y en a un }}"
     },
     {
       {{ à répéter pour tous les super evenements }}
@@ -36,6 +36,6 @@
     }
   ],
   "sameAs": [
-    "{{ url }}"
+    "{{ url (de la billetterie) }}"
   ]
 }
