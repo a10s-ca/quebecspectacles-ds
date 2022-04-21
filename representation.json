@@ -3,6 +3,7 @@
   "@type": "Event",
   "@id": "{{ url de la page de l'evenement }}#{{ id du showing}}",
   "eventStatus": "https://schema.org/{{ event_status.id_schema }}",
+  "eventAttendanceMode": "https://schema.org/{{ event_attendance_mode.id_schema }}",
   "additionalType": "http://quebecspectacles.com/event_types/{{ evenement.discipline.schema_type }}",
   "image": ["{{ url des images de l'evenement }}"],
   "name": "{{ name de l'evenement }}",
