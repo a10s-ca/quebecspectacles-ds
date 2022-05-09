@@ -38,5 +38,6 @@
   ],
   "sameAs": [
     "{{ url (de la billetterie) }}"
-  ]
+  ],
+  "workPerformed": {{ inserer le template creative_work.json }}
 }

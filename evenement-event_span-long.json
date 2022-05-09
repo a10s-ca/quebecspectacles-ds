@@ -20,6 +20,7 @@
         {{ à répéter pour tous les événements, seulement si on est dans une série }}
         "@id": "{{ url de la page de l'evenement enfant }}"
       }
-    ]
+    ],
+    "workPerformed": {{ inserer le template creative_work.json }}
   }
 ]

@@ -24,5 +24,6 @@
       }
     ]
   },
+  "workPerformed": {{ inserer le template creative_work.json }},
   {{ répéter representation.json pour chaque représentation }}
 ]

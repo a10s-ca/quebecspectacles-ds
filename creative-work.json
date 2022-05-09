@@ -1,0 +1,23 @@
+{
+  "@context": "http://schema.org",
+  "@type": "{{ additional_type.schema }}",
+  "@id": "{{ url de la page du produit }}",
+  "image": [
+    "{{ url de l'image du produit si on en a une }}"
+  ],
+  "name": "{{ name du produit }}",
+  "description": "{{ description du produit }}",
+  "abstact": "{{ abstract du produit }}",
+  "url": "{{ url de la page du produit }}",
+  "author": [
+    "{{ creator_people (enumeration) }}",
+    "{{ creator_organization (enumeration) }}"
+  ],
+  "sameAs": [
+    "{{ url (de consomation du produit) }}",
+    "{{ sameas_wikidata }}",
+    "{{ sameas_wikipedia }}",
+    "{{ sameas_imdb }}",
+    "{{ sameas_spotify }}"
+  ]
+}
