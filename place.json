@@ -11,7 +11,10 @@
     "adresseCountry": "{{ address_country }}"
   },
   "telephone": "{{ telephone }}",
-  "sameAs": "{{ website }}",
+  "sameAs": [
+    "{{ sameas_website }}",
+    "{{ sameas_wikidata }}"
+  ],
   "name": "{{ name }}",
   "geo": {
     "type": "http://schema.org/GeoCoordinates",
